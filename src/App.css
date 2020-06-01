@@ -1,38 +1,60 @@
-.App {
+
+
+.countDown-container {
+  background-image: url('./background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.countDown {
+  background-color: rgba(0, 0, 0, .1);
+  align-self: center;
+}
+
+.countDown p {
+  color: white;
+  font-size: 1.8em;
   text-align: center;
+  margin-bottom: 0em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.countDown-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 0em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.countDown-elments {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  margin: 2em;
+}
+
+.countDown-elments div {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.countDown-elments p {
   color: white;
-}
+  font-size: .7em;
+  text-align: center;
+} 
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  padding: .5em;
+  font-size: 4em;
+  font-weight: 700;
 }
